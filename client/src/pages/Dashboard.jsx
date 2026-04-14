@@ -7,7 +7,7 @@ export default function Dashboard() {
   const [visible, setVisible] = useState({});
 
   const fetchData = async () => {
-    const res = await axios.get("http://localhost:5000/api/passwords", {
+    const res = await axios.get("https://password-manager-backend-xkpm.onrender.com/api/passwords", {
       headers: { Authorization: localStorage.getItem("token") }
     });
     setData(res.data);
