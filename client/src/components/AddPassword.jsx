@@ -9,7 +9,7 @@ export default function AddPassword({ refresh }) {
 
   const add = async () => {
     await axios.post(
-      "http://localhost:5000/api/passwords",
+      "https://password-manager-backend-xkpm.onrender.com/api/passwords",
       { title, username, password },
       { headers: { Authorization: localStorage.getItem("token") } }
     );
