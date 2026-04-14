@@ -8,7 +8,7 @@ export default function Login() {
   const navigate = useNavigate();
 
   const login = async () => {
-    const res = await axios.post("http://localhost:5000/api/auth/login", {
+    const res = await axios.post("https://password-manager-backend-xkpm.onrender.com/api/auth/login", {
       email,
       password,
     });
